@@ -37,7 +37,7 @@ const EditWine = ({ userAuth }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/wine/one/${wine_id}`)
+      .get(`/api/wine/one/${wine_id}`)
       .then((res) => setWine(res.data))
       .catch((err) => console.log(err));
   }, [wine_id]);

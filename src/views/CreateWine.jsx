@@ -44,7 +44,7 @@ const CreateWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .post("http://localhost:8000/api/wine", wine)
+      .post("/api/wine", wine)
       .then((res) => console.log(res))
       .then((res) => navigate("/"))
       .catch((error) => {

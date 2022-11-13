@@ -16,7 +16,7 @@ const UsersWine = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/users/all/" + id)
+      .get("/api/users/all/" + id)
       .then((res) => setUserName(res.data))
       .catch((err) => console.log(err));
   }, [userName, setUserName, id]);
