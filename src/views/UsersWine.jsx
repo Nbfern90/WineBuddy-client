@@ -9,14 +9,14 @@ const UsersWine = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/wine/" + id)
+      .get(`https://wine-buddy-api.onrender.com/api/wine/${id}`)
       .then((res) => setWines(res.data))
       .catch((err) => console.log(err));
   }, [wines, setWines, id]);
 
   useEffect(() => {
     axios
-      .get("/api/users/all/" + id)
+      .get(`https://wine-buddy-api.onrender.com/api/users/all/${id}`)
       .then((res) => setUserName(res.data))
       .catch((err) => console.log(err));
   }, [userName, setUserName, id]);

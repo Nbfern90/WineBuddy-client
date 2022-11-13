@@ -11,7 +11,7 @@ const OneWine = () => {
 
   useEffect(() => {
     axios
-      .get(`/api/wine/one/${wine_id}`)
+      .get(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`)
       .then((res) => setWine(res.data))
       .catch((err) => console.log(err));
   }, [wine_id]);

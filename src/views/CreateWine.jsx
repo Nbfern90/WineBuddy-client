@@ -44,7 +44,7 @@ const CreateWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .post("/api/wine", wine)
+      .post("https://wine-buddy-api.onrender.com/api/wine", wine)
       .then((res) => console.log(res))
       .then((res) => navigate("/"))
       .catch((error) => {

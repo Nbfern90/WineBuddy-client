@@ -7,7 +7,7 @@ const AllUsers = () => {
 
   useEffect(() => {
     axios
-      .get(`/api/users/all`)
+      .get(`https://wine-buddy-api.onrender.com/api/users/all`)
       .then((res) => {
         setUsers(res.data);
       })
