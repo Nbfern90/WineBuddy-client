@@ -81,6 +81,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 .header ul li {
@@ -321,4 +322,10 @@ border-bottom: 2px solid #550A1E;
 .footer h6{
   font-size:.8rem ;
 }
+}
+
+@media(max-width:383px){
+  .header ul li a{
+    font-size: 12px;
+  }
 }
