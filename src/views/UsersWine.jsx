@@ -26,7 +26,7 @@ const UsersWine = () => {
     <div className="usersWineContainer">
       <h1>{userName.userName}'s Wines</h1>
       <div>
-        {user ? (
+        {user && user._id === id ? (
           <Link to="/addwine" className="addWine">
             Add A Wine
           </Link>
