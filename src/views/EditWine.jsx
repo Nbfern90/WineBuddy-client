@@ -56,7 +56,7 @@ const EditWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .put(`http://localhost:8000/api/wine/one/${wine_id}`, wine)
+      .put(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`, wine)
       .then((res) => console.log(res))
       .then(navigate(`/wine/${wine_id}`))
       .catch((error) => {
