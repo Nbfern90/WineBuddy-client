@@ -82,7 +82,7 @@ const EditWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .delete(`http://localhost:8000/api/wine/one/${wine_id}`)
+      .delete(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`)
       .then(navigate("/users/" + wine.user))
       .catch((error) => {
         const message =

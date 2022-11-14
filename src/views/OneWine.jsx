@@ -53,18 +53,4 @@ const OneWine = () => {
   );
 };
 
-/*<div className="card">
-        <ul>
-          <li>Winery: {wine.winery}</li>
-          <li>Country of Origin: {wine.country}</li>
-          <li>Region: {wine.region}</li>
-          <li>Vintage: {wine.year}</li>
-          <li>Grape(s): {wine.grapes}</li>
-          <li>Alc%: {wine.alcoholContent}%</li>
-          <li>Rating: {wine.rating} out of 5</li>
-          <li>Tasting Notes: {wine.tastingNotes}</li>
-          <img src={wine.img} alt="Not Available" width="100" height="250" />
-        </ul>
-      </div> */
-
 export default OneWine;
