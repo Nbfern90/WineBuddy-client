@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const UsersWine = () => {
+  const { user } = useSelector((state) => state.auth);
   const [wines, setWines] = useState([]);
   const [userName, setUserName] = useState([]);
   const { id } = useParams();
@@ -23,6 +25,13 @@ const UsersWine = () => {
   return (
     <div className="usersWineContainer">
       <h1>{userName.userName}'s Wines</h1>
+      <div>
+        {user ? (
+          <Link to="/addwine" className="addWine">
+            Add A Wine
+          </Link>
+        ) : null}
+      </div>
       {wines.map((wines, i) => (
         <div key={i}>
           <Link to={"/wine/" + wines._id} className="usersWines">
