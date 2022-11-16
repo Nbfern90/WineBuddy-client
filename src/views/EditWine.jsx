@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { URL } from "../App";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
 
@@ -37,7 +38,7 @@ const EditWine = ({ userAuth }) => {
 
   useEffect(() => {
     axios
-      .get(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`)
+      .get(`${URL}/api/wine/one/${wine_id}`)
       .then((res) => setWine(res.data))
       .catch((err) => console.log(err));
   }, [wine_id]);
@@ -56,7 +57,7 @@ const EditWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .put(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`, wine)
+      .put(`${URL}/api/wine/one/${wine_id}`, wine)
       .then((res) => console.log(res))
       .then(navigate(`/wine/${wine_id}`))
       .catch((error) => {
@@ -82,7 +83,7 @@ const EditWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .delete(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`)
+      .delete(`${URL}/api/wine/one/${wine_id}`)
       .then(navigate("/users/" + wine.user))
       .catch((error) => {
         const message =

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { URL } from "../App";
 
 const OneWine = () => {
   const [wine, setWine] = useState({});
@@ -11,7 +12,7 @@ const OneWine = () => {
 
   useEffect(() => {
     axios
-      .get(`https://wine-buddy-api.onrender.com/api/wine/one/${wine_id}`)
+      .get(`${URL}/api/wine/one/${wine_id}`)
       .then((res) => setWine(res.data))
       .catch((err) => console.log(err));
   }, [wine_id]);
