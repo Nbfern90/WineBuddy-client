@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { URL } from "../App";
 
 const UsersWine = () => {
   const { user } = useSelector((state) => state.auth);
@@ -19,7 +18,7 @@ const UsersWine = () => {
 
   useEffect(() => {
     axios
-      .get(`${URL}/api/users/all/${id}`)
+      .get(`https://wine-buddy-api.onrender.com/api/users/all/${id}`)
       .then((res) => setUserName(res.data))
       .catch((err) => console.log(err));
   }, [userName, setUserName, id]);

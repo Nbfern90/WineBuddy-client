@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { URL } from "../App";
 
 const CreateWine = ({ userAuth }) => {
   const [wine, setWine] = useState({
@@ -45,7 +44,7 @@ const CreateWine = ({ userAuth }) => {
     userAuth();
 
     axios
-      .post(`${URL}/api/wine`, wine)
+      .post("https://wine-buddy-api.onrender.com/api/wine", wine)
       .then((res) => console.log(res))
       .then(navigate("/"))
       .catch((error) => {

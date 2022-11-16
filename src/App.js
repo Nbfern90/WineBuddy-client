@@ -14,8 +14,6 @@ import EditWine from "./views/EditWine";
 import axios from "axios";
 import Footer from "./components/Footer";
 
-export const URL = process.env.SERVER_URL;
-
 function App() {
   const userAuth = () => {
     const userToken = JSON.parse(localStorage.getItem("user"));

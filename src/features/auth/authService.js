@@ -1,7 +1,6 @@
 import axios from "axios";
-import { URL } from "../../App";
 
-const API_URL = `${URL}/api/users/`;
+const API_URL = "https://wine-buddy-api.onrender.com/api/users/";
 
 // Register user
 const register = async (userData) => {
