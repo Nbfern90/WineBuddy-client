@@ -1,6 +1,25 @@
 # WineBuddy-Frontend
 
-![WINEBUDDY](/src/img/WineBuddyPic.png)
+![WINEBUDDY](/src/img/WineBuddy-Dash.png)
+
+## Background
+
+The purpose of the App was to use the show CRUD functionality using the MERN stack.
+
+## Features
+
+- Registration
+  ![Registration](/src/img/WineBuddy-Reg.png.png)
+- Login
+  ![Login](/src/img/WineBuddy-login.png)
+- User's Wines
+  ![Wines](/src/img/WineBuddy-Wines.png)
+- Single Wine
+  ![One Wine](/src/img/WineBuddy-oneWine.png)
+- Edit Page
+  ![Edit Page](/src/img/WineBuddy-Edit.png)
+
+## Functionality
 
 # Getting Started with Create React App and Redux
 
