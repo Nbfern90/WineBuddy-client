@@ -1,6 +1,6 @@
 # WineBuddy-Frontend
 
-![WINEBUDDY](/client/src/img/WineBuddyPic.png)
+![WINEBUDDY](/src/img/WineBuddyPic.png)
 
 # Getting Started with Create React App and Redux
 
