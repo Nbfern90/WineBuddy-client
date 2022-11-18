@@ -24,7 +24,7 @@ The purpose of this App was to show CRUD functionality using the MERN stack. Win
 - React
 - Redux
 - CSS and Bootstap
-- npm
+- npm-
   **Dependencies**
   - axios: ^1.1.2
   - bootstrap: ^5.2.2
