@@ -6,6 +6,8 @@
 
 The purpose of this App was to show CRUD functionality using the MERN stack. WineBuddy Gives users the ability to showcase wines they've enjoyed while learning about wine that other users enjoyed.
 
+BACKEND - https://github.com/Nbfern90/WineBuddy-server
+
 ## Features
 
 - Registration
