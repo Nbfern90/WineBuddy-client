@@ -38,7 +38,7 @@ BACKEND - https://github.com/Nbfern90/WineBuddy-server
   - react-router-dom: ^6.4.2
   - react-scripts: ^5.0.1
   - react-toastify: ^9.0.8
-  - web-vitals: ^2.1.4
+  - react-spinners: ^0.13.7
 - Deployed on https://render.com/
 
 ## Functionality
