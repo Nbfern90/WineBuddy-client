@@ -227,12 +227,16 @@ h3 {
   text-decoration: none;
   font-weight: 600;
   color: #550A1E;
-  font-size: 18px;}
+  font-size: 18px;
+}
+
 
 .usersWines:hover{
   color: #550A1E;
   font-size: 19px;
 }
+
+
 
 /*ONEWINE DESIGN */
 .oneWineContainer{

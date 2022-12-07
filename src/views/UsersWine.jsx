@@ -41,13 +41,6 @@ const UsersWine = () => {
       ) : (
         <div className="usersWineContainer">
           <h1>{userName.userName}'s Wines</h1>
-          <div>
-            {user && user._id === id ? (
-              <Link to="/addwine" className="addWine">
-                Add A Wine
-              </Link>
-            ) : null}
-          </div>
           {wines.map((wines, i) => (
             <div key={i}>
               <Link to={"/wine/" + wines._id} className="usersWines">
@@ -57,6 +50,13 @@ const UsersWine = () => {
               </Link>
             </div>
           ))}
+          <div>
+            {user && user._id === id ? (
+              <Link to="/addwine" className="addWine">
+                Add A Wine
+              </Link>
+            ) : null}
+          </div>
         </div>
       )}
     </div>
